@@ -3,4 +3,4 @@ services:
     name: tina-fashion
     buildCommand: npm install && npm run build
     staticPublishPath: out
-    rootDir: .  # IMPORTANT: must point to the root where package.json is
+    rootDir: my-portfolio
