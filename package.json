@@ -1,12 +1,11 @@
 {
-  "name": "my-portfolio",
-  "version": "0.1.0",
+  "name": "tina-fashion-fixed",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "serve out",
-    "lint": "next lint"
+    "start": "serve out"
   },
   "dependencies": {
     "next": "15.4.6",
@@ -14,17 +13,13 @@
     "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
     "@tailwindcss/postcss": "^4.1.12",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.10",
     "autoprefixer": "^10.4.21",
-    "eslint": "^9",
-    "eslint-config-next": "15.4.6",
-    "postcss": "^8.5.6",
+    "postcss": "^8.4.31",
     "serve": "^14.2.4",
     "tailwindcss": "^4.1.12",
-    "typescript": "^5"
+    "typescript": "^5.4.5"
   }
 }
