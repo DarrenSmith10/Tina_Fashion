@@ -1,5 +1,7 @@
 services:
   - type: static
     name: tina-fashion
+    env: node
     buildCommand: npm install && npm run build
-   
+    staticPublishPath: out
+    rootDir: .
