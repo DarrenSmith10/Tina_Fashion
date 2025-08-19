@@ -1,7 +1,18 @@
-export default function Home() {
+export default function HomePage() {
   return (
-    <main className="min-h-screen flex items-center justify-center bg-white">
-      <h1 className="text-4xl font-bold text-blue-600">🚀 It works! Welcome to Tina Fashion</h1>
-    </main>
+    
+    /*
+    old code snippet for testing Tailwind CSS
+    <div className="text-4xl font-bold text-center text-blue-600 mt-10">
+      Tailwind CSS is working!
+    </div>
+    */
+    <div className="text-4xl font-bold text-center text-blue-600 mt-10">
+      Justina Smith - Creative Portfolio
+      <p className="text-lg text-gray-700 mt-4">
+        Welcome to my portfolio! Explore my projects and skills.
+      </p>
+      
+    </div>
   )
 }
