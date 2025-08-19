@@ -2,4 +2,5 @@ services:
   - type: static
     name: tina-fashion
     buildCommand: npm install && npm run build
+    staticPublishPath: out
     rootDir: my-portfolio
