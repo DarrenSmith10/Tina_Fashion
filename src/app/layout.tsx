@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+
 import type { Metadata } from 'next'
 import { ReactNode } from 'react'
 // Update the import path if Navbar is located elsewhere, e.g.:
