@@ -1,11 +1,11 @@
-
+import Image from 'next/image';
 export default function ProjectsPage() {
   
   const Portfolioimages = [
     {
       id: 1,
       name: "Project One",
-      imageSrc: "assets/images/gallery5.jpg",
+      imageSrc: "assets/Images/gallery5.jpg",
       imageAlt: "Screenshot of Project One",
       description: "A responsive website built with Next.js and Tailwind CSS.",
       link: "https://example.com/project1"
@@ -13,7 +13,7 @@ export default function ProjectsPage() {
     {
       id: 2,
       name: "Project Two",
-      imageSrc: "assets/images/gallery6.jpg",
+      imageSrc: "assets/Images/gallery6.jpg",
       imageAlt: "Screenshot of Project Two",
       description: "An e-commerce application with a custom backend.",
       link: "https://example.com/project2"
@@ -21,7 +21,7 @@ export default function ProjectsPage() {
     {
       id: 3,
       name: "Project Three",
-      imageSrc: "assets/images/gallery7.jpg",
+      imageSrc: "assets/Images/gallery7.jpg",
       imageAlt: "Screenshot of Project Three",
       description: "An e-commerce application with a custom backend.",
       link: "https://example.com/project3"
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
     {
       id: 4,
       name: "Project Four",
-      imageSrc: "assets/images/gallery8.jpg",
+      imageSrc: "assets/Images/gallery8.jpg",
       imageAlt: "Screenshot of Project Four",
       description: "An e-commerce application with a custom backend.",
       link: "https://example.com/project4"
@@ -47,10 +47,14 @@ export default function ProjectsPage() {
         {Portfolioimages.map((img) => (
           <div key={img.id} className="w-full h-64 relative border rounded-lg overflow-hidden shadow">
             <a href={img.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-              <img
+              <Image
                 src={img.imageSrc}
-                className="object-cover w-full h-40"
                 alt={img.imageAlt}
+                width={400}
+                height={160}
+                className="object-cover w-full h-40"
+                loading="lazy"
+                unoptimized
               />
               <div className="p-4">
                 <h2 className="text-xl font-semibold">{img.name}</h2>
