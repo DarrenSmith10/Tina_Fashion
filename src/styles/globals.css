@@ -33,3 +33,34 @@ body {
 .hero-grid > div {
   grid-area: 1 / 1;
 }
+/*--------------------*/
+/* add hover effect to project images */
+.project-image {
+  transition: transform 0.3s ease;
+}
+.project-image:hover {
+  transform: scale(1.05);
+}
+/* add shadow to project cards */
+.project-card {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+/*Hero section images with hover effect*/
+.hero-images {
+  transition: transform 0.3s ease;
+}
+.hero-images:hover {
+  transform: scale(1.05);
+}
+/*--------------------*/ 
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-image-grid {
+    grid-template-columns: 1fr;
+  }
+}

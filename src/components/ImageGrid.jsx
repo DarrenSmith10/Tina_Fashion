@@ -7,9 +7,9 @@ export default function ImageGrid() {
   ];
 
     return (
-        <div className="grid gap-4 grid-cols-2 md:grid-cols-4 mt-12">
+        <div className=" grid gap-4 grid-cols-2 md:grid-cols-4 mt-12">
     {imageList.map((img, i) => (
-      <div key={i} className="relative w-full pt-[100%]">
+      <div key={i} className="hero-images relative w-full pt-[100%]">
         <img src={img} className="absolute inset-0 object-cover w-full h-full" alt="" />
       </div>
     ))}

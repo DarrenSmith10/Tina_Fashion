@@ -45,7 +45,7 @@ export default function ProjectsPage() {
 
       <div className="grid gap-4 grid-cols-2 md:grid-cols-2 mt-12">
         {Portfolioimages.map((img) => (
-          <div key={img.id} className="w-full h-64 relative border rounded-lg overflow-hidden shadow">
+          <div key={img.id} className="project-image w-full h-64 relative border rounded-lg overflow-hidden shadow">
             <a href={img.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
               <Image
                 src={img.imageSrc}
