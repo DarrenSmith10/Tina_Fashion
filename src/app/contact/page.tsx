@@ -1,3 +1,7 @@
+import React from 'react';
+import Form from "../../components/ContactForm";
+
+
 export default function ContactPage() {
   return (
     <div className="max-w-2xl mx-auto p-6">
@@ -8,12 +12,15 @@ export default function ContactPage() {
       <ul className="list-disc pl-5 space-y-2">
         <li>
           <strong>Email:</strong>{' '}
-                    <a href="mailto:your.email@example.com" className="text-blue-600 underline">
-                      your.email@example.com
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            );
-          }
-            
+          <a href="mailto:your.email@example.com" className="text-blue-600 underline">
+            your.email@example.com
+          </a>
+        </li>
+      </ul>
+      <div className="mt-8">
+      </div>
+      < Form />
+    </div>
+      
+  );
+}
