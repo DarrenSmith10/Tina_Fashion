@@ -1,6 +1,6 @@
 
 
-import HeroSection from '../components/HeroSection';
+import { HeroSection } from '../components/HeroSection';
 import ImageGrid from '../components/ImageGrid';
 import Footer from '../components/Footer';
 export default function HomePage() {
