@@ -10,7 +10,7 @@ export const Navbar = () => {
         <nav className={`sticky top-0 z-50 text-white p-4 shadow-md ${styles.navbar}`}>
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-black text-lg font-bold">
-                    My Portfolio
+                    Tina Fashion
                 </Link>
 
                 <div className="space-x-4">
@@ -38,20 +38,20 @@ export const Navbar = () => {
                     </button>
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg z-10">
-                           <a href="https://example.com/project1" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Project 1
+                           <a href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Textiles
                             </a>
 
-                            <a href="https://example.com/project2" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Project 2
+                            <a href="/projects/wools" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Wools Collection
                             </a>
 
-                            <a href="https://example.com/project3" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Project 3
+                            <a href="/projects/hats" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Hats Collection
                             </a>
 
-                            <a href="https://example.com/project4" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Project 4
+                            <a href="/projects/scarfs" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Scarfs Collection
                             </a>
                         </div>
                     )}

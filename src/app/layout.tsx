@@ -8,8 +8,8 @@ import { Navbar } from '../components/Navbar'
 
 // Optional: SEO metadata
 export const metadata: Metadata = {
-  title: 'My Portfolio',
-  description: 'Creative portfolio built with Next.js 15 and Tailwind CSS',
+  title: 'Tina Fashion Portfolio',
+  description: 'Creative textile and fashion designs by Tina.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
