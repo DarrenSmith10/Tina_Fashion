@@ -10,8 +10,7 @@ export default nextConfig;
 */
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  reactStrictMode: true,
-}
+  output: 'export', // ✅ required for static export (no server)
+};
 
-export default nextConfig
+module.exports = nextConfig;

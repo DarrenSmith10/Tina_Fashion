@@ -42,7 +42,7 @@ export const Navbar = () => {
                                 Textiles
                             </Link>
 
-                            <Link href="/projects/wools" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/wool" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Wools Collection
                             </Link>
 
