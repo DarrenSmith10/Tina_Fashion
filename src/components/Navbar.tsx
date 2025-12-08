@@ -38,21 +38,21 @@ export const Navbar = () => {
                     </button>
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg z-10">
-                           <a href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
+                           <Link href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Textiles
-                            </a>
+                            </Link>
 
-                            <a href="/projects/wools" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/wools" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Wools Collection
-                            </a>
+                            </Link>
 
-                            <a href="/projects/hats" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/hats" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Hats Collection
-                            </a>
+                            </Link>
 
-                            <a href="/projects/scarfs" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/scarfs" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Scarfs Collection
-                            </a>
+                            </Link>
                         </div>
                     )}
                         </div> {/* Close dropdown wrapper */}
