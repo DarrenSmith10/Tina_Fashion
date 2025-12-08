@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-
+import Image from 'next/image';
 
 
 export default function ProjectsPage() {
@@ -13,7 +13,7 @@ export default function ProjectsPage() {
             <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
               <h2 className="text-xl font-semibold mb-2">Textiles</h2>
               <p className="text-gray-600">Showcasing various textile designs and patterns.</p>
-              <img
+              <Image
                 src="/assets/images/gallery5.jpg"
                 alt="Textiles"
                 width={500}
@@ -29,7 +29,7 @@ export default function ProjectsPage() {
             <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
               <h2 className="text-xl font-semibold mb-2">Hat</h2>
               <p className="text-gray-600">Hat collection avaiable.</p>
-              <img
+              <Image
                 src="/assets/images/gallery7.jpg"
                 alt="Textiles"
                 width={500}
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
             <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
               <h2 className="text-xl font-semibold mb-2">Wool</h2>
               <p className="text-gray-600">Wool collection avaiable.</p>
-              <img
+              <Image
                 src="/assets/images/gallery6.jpg"
                 alt="Textiles"
                 width={500}
@@ -59,7 +59,7 @@ export default function ProjectsPage() {
             <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
               <h2 className="text-xl font-semibold mb-2">Scarfs</h2>
               <p className="text-gray-600">Scarfs collection avaiable.</p>
-              <img
+              <Image
                 src="/assets/images/gallery8.jpg"
                 alt="Textiles"
                 width={500}

@@ -1,8 +1,9 @@
 'use client';
+import Image from 'next/image';
 export default function HeroSection() {
     return (
     <div className="relative h-screen w-full overflow-hidden">
-    <img
+    <Image
         src="assets/Images/banner1.jpg"
         alt="Hero Image"
         className="w-full h-full object-cover"
