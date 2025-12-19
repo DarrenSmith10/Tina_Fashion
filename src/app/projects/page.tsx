@@ -14,7 +14,7 @@ export default function ProjectsPage() {
               <h2 className="text-xl font-semibold mb-2">Textiles</h2>
               <p className="text-gray-600">Showcasing various textile designs and patterns.</p>
               <Image
-                src="/assets/images/gallery5.jpg"
+                src="/assets/Images/gallery5.jpg"
                 alt="Textiles"
                 width={500}
                 height={300}
@@ -30,7 +30,7 @@ export default function ProjectsPage() {
               <h2 className="text-xl font-semibold mb-2">Hat</h2>
               <p className="text-gray-600">Hat collection avaiable.</p>
               <Image
-                src="/assets/images/gallery7.jpg"
+                src="/assets/Images/gallery7.jpg"
                 alt="Textiles"
                 width={500}
                 height={300}
@@ -45,7 +45,7 @@ export default function ProjectsPage() {
               <h2 className="text-xl font-semibold mb-2">Wool</h2>
               <p className="text-gray-600">Wool collection avaiable.</p>
               <Image
-                src="/assets/images/gallery6.jpg"
+                src="/assets/Images/gallery6.jpg"
                 alt="Textiles"
                 width={500}
                 height={300}
@@ -60,7 +60,7 @@ export default function ProjectsPage() {
               <h2 className="text-xl font-semibold mb-2">Scarfs</h2>
               <p className="text-gray-600">Scarfs collection avaiable.</p>
               <Image
-                src="/assets/images/gallery8.jpg"
+                src="/assets/Images/gallery8.jpg"
                 alt="Textiles"
                 width={500}
                 height={300}
