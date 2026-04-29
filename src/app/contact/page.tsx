@@ -8,7 +8,7 @@ export default function ContactPage() {
 
       <div
       className="absolute inset-0 bg-cover bg-center"
-      style={{ backgroundImage: "url('assets/Images/banner1.jpg')" }}
+      style={{ backgroundImage: "url('assets/Images/HandBag_6.jpg')" }}
       ></div>
       {/* add Background image box behind the contact box */}
     <div className="absolute inset-0 bg-black opacity-50"></div>
