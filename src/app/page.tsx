@@ -2,6 +2,7 @@
 
 import { HeroSection } from '../components/HeroSection';
 import ImageGrid from '../components/ImageGrid';
+
 import Footer from '../components/Footer';
 export default function HomePage() {
   // Define the imageList array with string type
@@ -10,6 +11,7 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <ImageGrid />
+      
       <Footer />
     </main>
   )

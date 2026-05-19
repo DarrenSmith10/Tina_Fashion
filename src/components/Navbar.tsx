@@ -39,19 +39,19 @@ export const Navbar = () => {
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg z-10">
                            <Link href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Textiles
+                                Textiles 1 Collection
                             </Link>
 
                             <Link href="/projects/wool" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Wools Collection
+                                Textiles 2 Collection
                             </Link>
 
                             <Link href="/projects/hats" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Hats Collection
+                                Textiles 3 Collection
                             </Link>
 
                             <Link href="/projects/scarfs" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Scarfs Collection
+                                Textiles 4 Collection
                             </Link>
                         </div>
                     )}

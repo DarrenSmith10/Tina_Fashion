@@ -25,11 +25,14 @@ export default function AboutPage() {
           
         </div>
       <p className="text-gray-700 mb-4">
-        Tina is a passionate textile designer with a love using colours and painting. 
-        With a background in fashion and textile design, she has a keen eye for detail and a unique approach to creating vibrant and innovative designs. Her work is inspired by nature, culture, and the world around her, resulting in captivating patterns and textures that bring life to fabrics.
+       I studied Printed Textile design at UCA Farnham.  I am obsessed with colour and texture. influences have been many, from Matisse to Hodgkin and the bold colourists of mid 21st century. 
       </p>
-      <p className="text-gray-700">
-        In her free time, Tina enjoys exploring latest trends and spreading her creativity. Feel free to connect with her on her email or check out her projects!
+      <p className="text-gray-700 mb-4">
+         I also explore with mixed  media working with silks Textures such as leather, linen and wool have been combined in my current collection of handmade bags and purses.
+      </p>
+
+      <p className="text-gray-700 mb-4">
+        I use a variety of techniques including silkscreen printing, free machine embroidery and hand stitch to individually craft each piece. Many designs are then further embellished with beading and buttons to add individuality and texture.
       </p>
       
       <main>

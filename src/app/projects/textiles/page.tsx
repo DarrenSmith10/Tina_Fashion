@@ -5,7 +5,7 @@ export default function TextilesProject() {
       <h1 className="text-4xl font-bold mb-4">Textiles Library</h1>
       <p className="text-lg text-gray-600">Showcasing various textile designs and patterns.</p>
       <Image
-        src="/assets/Images/gallery5.jpg"
+        src="/assets/Images/Textiles_1.jpeg"
          width={400}
         height={200}
         alt="Textiles"

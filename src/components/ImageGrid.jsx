@@ -5,7 +5,13 @@ export default function ImageGrid() {
     "assets/Images/HandBag_3.jpg",
     "assets/Images/HandBag_4.jpg",
     "assets/Images/HandBag_5.jpg",
-    "assets/Images/HandBag_6.jpg"
+    "assets/Images/HandBag_6.jpg",
+    "assets/Images/Textiles_1.jpeg",
+    "assets/Images/Textiles_2.jpeg",
+    "assets/Images/Textiles_3.jpeg",
+    "assets/Images/Textiles_4.jpeg",
+    "assets/Images/Textiles_5.jpeg",
+    "assets/Images/Textiles_6.jpeg",
   ];
 
     return (
