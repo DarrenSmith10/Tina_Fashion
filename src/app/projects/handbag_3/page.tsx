@@ -3,10 +3,10 @@ import Image from 'next/image';
 export default function HandbagsProject() {
   return (
     <main className="container mx-auto px-4 py-10">
-      <h1 className="text-4xl font-bold mb-4">Handbags Collection</h1>
+      <h1 className="text-4xl font-bold mb-4">Handbags 3</h1>
       <p className="text-lg text-gray-600">A variety of handbags for everyday use.</p>
       <Image
-        src="/assets/Images/handbag_3.jpeg"
+        src="/assets/Images/HandBag_3.jpg"
          width={400}
         height={200}
         alt="Handbags"

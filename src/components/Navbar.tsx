@@ -38,20 +38,28 @@ export const Navbar = () => {
                     </button>
                     {isOpen && (
                         <div className="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg z-10">
-                           <Link href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
+                           <Link href="/projects/textiles_1" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Textiles 1 Collection
                             </Link>
 
-                            <Link href="/projects/wool" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/textiles_2" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Textiles 2 Collection
                             </Link>
 
-                            <Link href="/projects/hats" className="block px-4 py-2 text-black hover:bg-gray-200">
+                            <Link href="/projects/textiles_3" className="block px-4 py-2 text-black hover:bg-gray-200">
                                 Textiles 3 Collection
                             </Link>
 
-                            <Link href="/projects/scarfs" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Textiles 4 Collection
+                            <Link href="/projects/handbag_1" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Handbag 1 Collection
+                            </Link>
+
+                            <Link href="/projects/handbag_2" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Handbag 2 Collection
+                            </Link>
+
+                            <Link href="/projects/handbag_3" className="block px-4 py-2 text-black hover:bg-gray-200">
+                                Handbag 3 Collection
                             </Link>
                         </div>
                     )}
