@@ -18,8 +18,13 @@ export function HeroSection() {
     </div>
    
     <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
-      <h1 className="text-white text-5xl font-bold">Welcome to My Portfolio</h1>
+      <h1 className="text-white text-5xl shadow-x3">Justina Smith</h1>
+      <h2 className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent text-white text-center py-4">
+        Fashion designer and textile artist
+      </h2>
+
     </div>
+    
   </div>
 
 

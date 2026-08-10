@@ -17,8 +17,8 @@ const lora = Lora({
 
 // Optional: SEO metadata
 export const metadata: Metadata = {
-  title: 'Tina Fashion Portfolio',
-  description: 'Creative textile and fashion designs by Tina.',
+  title: 'Justina Smith',
+  description: 'Fashion designer and textile artist.',
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
