@@ -1,32 +1,48 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 export function HeroSection() {
     return (
-    <div className="relative h-screen w-full overflow-hidden">
-     {/* add Background image box behind the contact box */}
-    <Image
-        src="assets/Images/HandBag_6.jpg"
-        width={500}
-        height={500}
-        alt="Hero Image"
-        className="w-full h-full object-cover"
-      />
-    
-    <div className="absolute inset-0 bg-black opacity-50">
-    
+     <section className="bg-[#f7f3ed]">
+      <div className="grid min-h-[75vh] grid-cols-1 lg:grid-cols-2">
 
-    </div>
-   
-    <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center">
-      <h1 className="text-white text-5xl shadow-x3">Justina Smith</h1>
-      <h2 className="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-black to-transparent text-white text-center py-4">
-        Fashion designer and textile artist
-      </h2>
+        {/* Left side */}
+        <div className="flex items-center px-8 py-16 md:px-14 lg:px-20">
+          <div className="max-w-xl">
+            <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-600">
+              Fashion Designer & Textile Artist
+            </p>
 
-    </div>
-    
-  </div>
+            <h1 className="text-5xl leading-[1.05] text-neutral-900 md:text-6xl lg:text-7xl">
+              Creating textiles
+              <br />
+              with <em>soul, texture</em>
+              <br />
+              and timeless
+              <br />
+              craftsmanship.
+            </h1>
 
+            <Link
+              href="/projects"
+              className="mt-10 inline-block border-b border-black pb-1 text-sm uppercase tracking-[0.18em] transition-opacity hover:opacity-50"
+            >
+              View Work
+            </Link>
+          </div>
+        </div>
+
+        {/* Right side */}
+        <div className="relative min-h-[500px] lg:min-h-full">
+          <img
+            src="/assets/Images/HandBag_1.jpg"
+            alt="Handcrafted textile work by Justina Smith"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+
+      </div>
+    </section>
 
 
     );

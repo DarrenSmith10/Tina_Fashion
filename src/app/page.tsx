@@ -4,12 +4,14 @@ import { HeroSection } from '../components/HeroSection';
 import ImageGrid from '../components/ImageGrid';
 
 import Footer from '../components/Footer';
+import SelectedWork from '@/components/SelectedWork';
 export default function HomePage() {
   // Define the imageList array with string type
   
   return (
     <main>
       <HeroSection />
+      <SelectedWork />
       <ImageGrid />
       
       <Footer />
