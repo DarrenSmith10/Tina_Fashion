@@ -30,7 +30,7 @@ export default function SelectedWork() {
 
           {/* Textiles */}
           <Link
-            href="/projects/textiles"
+            href="/projects/textiles_1"
             className="group lg:col-span-7"
           >
             <div className="aspect-[4/3] overflow-hidden bg-neutral-200">
@@ -59,12 +59,12 @@ export default function SelectedWork() {
 
           {/* Handbags */}
           <Link
-            href="/projects/handbags"
+            href="/projects/handbag_1"
             className="group lg:col-span-5 lg:mt-24"
           >
             <div className="aspect-[4/5] overflow-hidden bg-neutral-200">
               <img
-                src="/assets/Images/Handbag_2.jpg"
+                src="/assets/Images/HandBag_1.jpg"
                 alt="Handcrafted handbag by Justina Smith"
                 className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
               />
