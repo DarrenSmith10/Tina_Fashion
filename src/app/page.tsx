@@ -1,10 +1,11 @@
 
 
 import { HeroSection } from '../components/HeroSection';
-import ImageGrid from '../components/ImageGrid';
+
 
 import Footer from '../components/Footer';
 import SelectedWork from '@/components/SelectedWork';
+import AboutPreview from '@/components/AboutPreview';
 export default function HomePage() {
   // Define the imageList array with string type
   
@@ -12,7 +13,7 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <SelectedWork />
-      <ImageGrid />
+      <AboutPreview />
       
       <Footer />
     </main>
