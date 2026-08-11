@@ -6,6 +6,7 @@ import { HeroSection } from '../components/HeroSection';
 import Footer from '../components/Footer';
 import SelectedWork from '@/components/SelectedWork';
 import AboutPreview from '@/components/AboutPreview';
+import LetsConnect from '@/components/LetsConnect';
 export default function HomePage() {
   // Define the imageList array with string type
   
@@ -14,6 +15,7 @@ export default function HomePage() {
       <HeroSection />
       <SelectedWork />
       <AboutPreview />
+      <LetsConnect />
       
       <Footer />
     </main>
