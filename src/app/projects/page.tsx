@@ -1,114 +1,106 @@
 'use client';
 import Link from 'next/link';
-import Image from 'next/image';
 
+
+
+const projects = [
+  {
+    title: 'Surface design',
+    category: 'Textiles',
+    image: '/assets/Images/Textiles_1.jpg',
+    href: '/projects/textiles',
+  },
+  {
+    title: 'Handcrafted accessories',
+    category: 'Handbags',
+    image: '/assets/Images/HandBag_1.jpg',
+    href: '/projects/handbags',
+  },
+
+];
 
 export default function ProjectsPage() {
   return (
-    <main className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">Projects</h1>
+    <main className="bg-[#f7f3ed] px-4 py-16 md:px-8 lg:px-12">
+      <div className="mx-auto max-w-[1600px]">
 
-       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Textiles Project */}
-          <Link href="/projects/textiles_1">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">Textiles 1</h2>
-              <p className="text-gray-600">Showcasing various textile designs and patterns.</p>
-              <Image
-                src="/assets/Images/Textiles_1.jpg"
-                alt="Textiles"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+        {/* Header */}
+        <section className="mb-16 grid grid-cols-1 gap-8 lg:grid-cols-12">
+          <div className="lg:col-span-7">
+            <p className="mb-4 text-xs uppercase tracking-[0.25em] text-neutral-500">
+              Portfolio
+            </p>
 
-          {/* Textiles Project 2 */}
-          <Link href="/projects/textiles_2">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">Textiles 2</h2>
-              <p className="text-gray-600">Showcasing various textile designs and patterns.</p>
-              <Image
-                src="/assets/Images/Textiles_2.jpg"
-                alt="Textiles"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+            <h1 className="text-5xl leading-tight md:text-6xl lg:text-7xl">
+              Selected textile,
+              <br />
+              fashion and surface work.
+            </h1>
+          </div>
 
-          {/* Textiles Project_3 */}
-          <Link href="/projects/textiles_3">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">Textiles 3</h2>
-              <p className="text-gray-600">Showcasing various textile designs and patterns.</p>
-              <Image
-                src="/assets/Images/Textiles_3.jpg"
-                alt="Textiles"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+          <div className="lg:col-span-4 lg:col-start-9 lg:self-end">
+            <p className="text-lg leading-8 text-neutral-600">
+              A collection of textile development, handcrafted accessories,
+              garment work and pattern exploration.
+            </p>
+          </div>
+        </section>
 
+        {/* Projects */}
+        <section className="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-12">
 
-          {/* HandBag Project_1 */}
-          <Link href="/projects/handbag_1">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">HandBag 1</h2>
-              <p className="text-gray-600">Showcasing various handbag designs and patterns.</p>
-              <Image
-                src="/assets/Images/HandBag_1.jpg"
-                alt="HandBag"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+          {projects.map((project, index) => {
+            const layout =
+              index % 4 === 0
+                ? "lg:col-span-7"
+                : index % 4 === 1
+                ? "lg:col-span-5 lg:mt-24"
+                : index % 4 === 2
+                ? "lg:col-span-4"
+                : "lg:col-span-8";
 
-          {/* HandBag Project_2 */}
-          <Link href="/projects/handbag_2">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">HandBag 2</h2>
-              <p className="text-gray-600">Showcasing various handbag designs and patterns.</p>
-              <Image
-                src="/assets/Images/HandBag_2.jpg"
-                alt="HandBag"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+            const aspect =
+              index % 4 === 0
+                ? "aspect-[4/3]"
+                : index % 4 === 1
+                ? "aspect-[4/5]"
+                : index % 4 === 2
+                ? "aspect-square"
+                : "aspect-[16/9]";
 
+            return (
+              <Link
+                href={project.href}
+                key={project.href}
+                className={`group ${layout}`}
+              >
+                <div className={`${aspect} overflow-hidden bg-neutral-200`}>
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.025]"
+                  />
+                </div>
 
-          {/* HandBag Project_3 */}
-          <Link href="/projects/handbag_3">
-            <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
-              <h2 className="text-xl font-semibold mb-2">HandBag 3</h2>
-              <p className="text-gray-600">Showcasing various handbag designs and patterns.</p>
-              <Image
-                src="/assets/Images/HandBag_3.jpg"
-                alt="HandBag"
-                width={500}
-                height={300}
-                className="w-full h-48 object-cover rounded mt-4"
-              />
-              <p className="text-gray-600 mt-2">Click to view details →</p>
-            </div>
-          </Link>
+                <div className="mt-4 flex items-start justify-between gap-4">
+                  <div>
+                    <h2 className="text-2xl text-neutral-900">
+                      {project.title}
+                    </h2>
+                    <p className="mt-1 text-sm text-neutral-500">
+                      {project.category}
+                    </p>
+                  </div>
 
-        
+                  <span className="text-sm text-neutral-400">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
 
+        </section>
       </div>
     </main>
   );
