@@ -34,7 +34,8 @@ export default function ContactPage() {
               </p>
 
               <a
-                href="mailto:justinasmith@onetel.com"
+                // href="mailto:justinasmith@onetel.com"
+                href="mailto:kumakier@gmail.com"
                 className="text-lg transition-opacity hover:opacity-50"
               >
                 justinasmith@onetel.com

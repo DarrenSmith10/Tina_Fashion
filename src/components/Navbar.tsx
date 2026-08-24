@@ -10,7 +10,7 @@ export const Navbar = () => {
         <nav className={`sticky top-0 z-50 text-white p-4 shadow-md ${styles.navbar}`}>
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-black text-lg font-bold">
-                    Tina Fashion
+                    {/* Will add the Website name which domain is bought */}
                 </Link>
 
                 <div className="space-x-4">
