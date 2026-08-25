@@ -2,12 +2,12 @@ import ImageGrid from "@/components/ImageGrid";
 
 
 const handbagImages = [
-        "/assets/Images/Handbag_1.jpg",
-        "/assets/Images/Handbag_2.jpg",
-        "/assets/Images/Handbag_3.jpg",
-        "/assets/Images/Handbag_4.jpg",
-        "/assets/Images/Handbag_5.jpg",
-        "/assets/Images/Handbag_6.jpg",
+        "/assets/Images/HandBag_1.jpg",
+        "/assets/Images/HandBag_2.jpg",
+        "/assets/Images/HandBag_3.jpg",
+        "/assets/Images/HandBag_4.jpg",
+        "/assets/Images/HandBag_5.jpg",
+        "/assets/Images/HandBag_6.jpg",
         
       ];
       
