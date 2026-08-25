@@ -11,6 +11,12 @@ export const Navbar = () => {
             <div className="container mx-auto flex justify-between items-center">
                 <Link href="/" className="text-black text-lg font-bold">
                     {/* Will add the Website name which domain is bought */}
+                    <h1>
+                        Tinnika
+                    </h1>
+                    <h2 className="text-sm font-light">
+                        by Justina Smith
+                    </h2>
                 </Link>
 
                 <div className="space-x-4">

@@ -35,10 +35,10 @@ export default function ContactPage() {
 
               <a
                 // href="mailto:justinasmith@onetel.com"
-                href="mailto:kumakier@gmail.com"
+                href="mailto:justinasmith@tinnikadesign.co.uk"
                 className="text-lg transition-opacity hover:opacity-50"
               >
-                justinasmith@onetel.com
+                justinasmith@tinnikadesign.co.uk
               </a>
 
             </div>
