@@ -3,13 +3,13 @@ import Image from 'next/image';
 
 const ProfilePic = () => {
   return (
-    <div className="flex justify-left mb-4">
+    <div className="relative h-90 w-90 overflow-hidden rounded-full border-4 border-white shadow-lg">
     <Image
     
-      src="assets/Images/HandBag_6.jpg"
+      src="assets/Images/HandBag_4.jpg"
       alt="Profile Picture"
-      width={200}
-      height={200}
+      width={400}
+      height={400}
     />
     </div>
   );

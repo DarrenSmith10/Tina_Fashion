@@ -32,10 +32,11 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right side */}
-        <div className="relative min-h-[500px] lg:min-h-full">
+        {/* Right side i want to move to the left a bit */}
+        
+        <div className="relative min-h-[200px] lg:min-h-[200px]">
           <img
-            src="/assets/Images/HandBag_1.jpg"
+            src="/assets/Images/HandBag_5.jpg"
             alt="Handcrafted textile work by Justina Smith"
             className="absolute inset-0 h-full w-full object-cover"
           />
