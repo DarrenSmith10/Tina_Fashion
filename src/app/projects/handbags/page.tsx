@@ -1,16 +1,11 @@
 import ImageGrid from "@/components/ImageGrid";
 
 
-const handbagImages = [
-        "/assets/Images/HandBag_1.jpg",
-        "/assets/Images/HandBag_2.jpg",
-        "/assets/Images/HandBag_3.jpg",
-        "/assets/Images/HandBag_4.jpg",
-        "/assets/Images/HandBag_5.jpg",
-        "/assets/Images/HandBag_6.jpg",
-        
-      ];
-      
+const handbagImages: string[] = [];
+for (let i = 1; i <= 13; i++) {
+  handbagImages.push(`/assets/Images/HandBag_${i}.jpg`);
+}
+
 export default function HandbagsProject() {
   return (
    <main className="bg-[#f7f3ed] text-neutral-900">

@@ -1,10 +1,9 @@
 import ImageGrid from "@/components/ImageGrid";
 
-const textileImages = [
-  "/assets/Images/Textiles_1.jpg",
-  "/assets/Images/Textiles_2.jpg",
-  "/assets/Images/Textiles_3.jpg",
-];
+const textileImages: string[] = [];
+for (let i = 1; i <= 25; i++) {
+  textileImages.push(`/assets/Images/Textiles_${i}.jpg`);
+}
 
 export default function TextilesPage() {
   return (

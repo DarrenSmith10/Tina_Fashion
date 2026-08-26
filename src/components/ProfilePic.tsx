@@ -6,7 +6,7 @@ const ProfilePic = () => {
     <div className="relative h-90 w-90 overflow-hidden rounded-full border-4 border-white shadow-lg">
     <Image
     
-      src="assets/Images/HandBag_4.jpg"
+      src="assets/Images/TestProfile.jpg"
       alt="Profile Picture"
       width={400}
       height={400}
