@@ -30,7 +30,7 @@ export default function SelectedWork() {
 
           {/* Textiles */}
           <Link
-            href="/projects/textiles_1"
+            href="/projects/textiles"
             className="group lg:col-span-7"
           >
             <div className="aspect-[4/3] overflow-hidden bg-neutral-200">
@@ -59,7 +59,7 @@ export default function SelectedWork() {
 
           {/* Handbags */}
           <Link
-            href="/projects/handbag_1"
+            href="/projects/handbags"
             className="group lg:col-span-5 lg:mt-24"
           >
             <div className="aspect-[4/5] overflow-hidden bg-neutral-200">
