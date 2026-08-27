@@ -12,7 +12,7 @@ export default function AboutPage() {
 
             <div className="lg:col-span-7">
               <p className="mb-4 text-xs uppercase tracking-[0.25em] text-neutral-500">
-                About Tina
+                About Me
               </p>
 
               <h1 className="text-5xl leading-[1.05] md:text-6xl lg:text-7xl">

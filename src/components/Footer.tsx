@@ -12,17 +12,13 @@ export default function Footer() {
             <FaEnvelope />
           </a>
           </p>
-        <div className="flex justify-center gap-6 text-2xl text-gray-600">
+        <div className="flex justify-center text-gray-600 mb-4">
           <p>
   Designed & developed by{" "}
-  <a
-    href="https://darrensmith10.github.io/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="text-neutral-800 underline-offset-4 transition-opacity hover:opacity-50 hover:underline"
-  >
+ 
+  
     Darren Smith
-  </a>
+  
 </p>
         </div>
         
