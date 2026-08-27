@@ -51,22 +51,15 @@ export default function ProjectsPage() {
 
           {projects.map((project, index) => {
             const layout =
-              index % 4 === 0
-                ? "lg:col-span-7"
-                : index % 4 === 1
-                ? "lg:col-span-5 lg:mt-24"
-                : index % 4 === 2
-                ? "lg:col-span-4"
-                : "lg:col-span-8";
+  index % 4 === 0
+    ? "lg:col-span-7"
+    : index % 4 === 1
+    ? "lg:col-span-5"
+    : index % 4 === 2
+    ? "lg:col-span-4"
+    : "lg:col-span-8";
 
-            const aspect =
-              index % 4 === 0
-                ? "aspect-[4/3]"
-                : index % 4 === 1
-                ? "aspect-[4/5]"
-                : index % 4 === 2
-                ? "aspect-square"
-                : "aspect-[16/9]";
+            
 
             return (
               <Link
@@ -74,7 +67,7 @@ export default function ProjectsPage() {
                 key={project.href}
                 className={`group ${layout}`}
               >
-                <div className={`${aspect} overflow-hidden bg-neutral-200`}>
+                <div className="h-[500px] overflow-hidden bg-neutral-200 lg:h-[600px]">
                   <img
                     src={project.image}
                     alt={project.title}
