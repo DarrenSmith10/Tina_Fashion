@@ -22,8 +22,7 @@ export default function ContactPage() {
             </h1>
 
             <p className="mt-8 max-w-md text-lg leading-8 text-neutral-600">
-              For collaborations, commissions or enquiries about my textile
-              and fashion work, please get in touch.
+              For more enquiries about my work, please get in touch.
             </p>
 
             {/* Contact information */}
@@ -34,7 +33,7 @@ export default function ContactPage() {
               </p>
 
               <a
-                // href="mailto:justinasmith@onetel.com"
+                
                 href="mailto:justinasmith@tinnikadesign.co.uk"
                 className="text-lg transition-opacity hover:opacity-50"
               >

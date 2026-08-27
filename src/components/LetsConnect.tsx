@@ -16,9 +16,7 @@ export default function LetsConnect() {
               </p>
 
               <h2 className="max-w-xl text-3xl leading-tight md:text-4xl lg:text-5xl">
-                For collaborations, commissions
-                <br className="hidden md:block" />
-                {" "}or enquiries about my work.
+                For more enquiries about my work, please get in touch.
               </h2>
             </div>
           </div>

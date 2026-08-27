@@ -20,7 +20,7 @@ export default function AboutPreview() {
         <div className="flex items-center bg-[#faf8f4] px-8 py-12 lg:col-span-5 lg:px-12">
           <div>
             <p className="mb-5 text-xs uppercase tracking-[0.25em] text-neutral-500">
-              About Justina
+              About Me
             </p>
 
             <h2 className="max-w-xl text-3xl leading-tight md:text-4xl">
@@ -32,7 +32,7 @@ export default function AboutPreview() {
               href="/about"
               className="mt-8 inline-block border-b border-neutral-900 pb-1 text-xs uppercase tracking-[0.15em] transition-opacity hover:opacity-50"
             >
-              Read more about Justina →
+              Read more →
             </Link>
           </div>
         </div>
