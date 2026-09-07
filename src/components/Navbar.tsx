@@ -31,7 +31,7 @@ export const Navbar = () => {
           className="flex flex-col items-start text-black leading-none"
         >
           <span
-            className={`${satisfy.className} text-[42px] font-normal leading-[0.8] md:text-[48px]`}
+            className={`${satisfy.className} text-[21px] font-normal leading-[0.8] md:text-[48px]`}
           >
             Tinnika
           </span>
