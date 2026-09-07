@@ -10,7 +10,7 @@ export function HeroSection() {
         <div className="flex items-center px-8 py-16 md:px-14 lg:col-span-5 lg:px-12">
           <div className="max-w-xl">
             <p className="mb-5 text-sm uppercase tracking-[0.25em] text-neutral-600">
-              Fashion Designer & Textile Artist
+              Textiles Designer & Textile Artist
             </p>
 
             <h1 className="text-5xl leading-[1.05] text-neutral-900 md:text-6xl lg:text-7xl">

@@ -1,68 +1,209 @@
-'use client';
+"use client";
+
 import Link from "next/link";
 import { useState } from "react";
-import styles from './Navbar.module.css'; // Adjust the path as necessary
+import { Satisfy } from "next/font/google";
+import styles from "./Navbar.module.css";
+
+const satisfy = Satisfy({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const Navbar = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [projectsOpen, setProjectsOpen] = useState(false);
 
-    return(
-        <nav className={`sticky top-0 z-50 text-white p-4 shadow-md ${styles.navbar}`}>
-            <div className="container mx-auto flex justify-between items-center">
-                <Link href="/" className="text-black text-lg font-bold">
-                    {/* Will add the Website name which domain is bought */}
-                    <h1>
-                        Tinnika
-                    </h1>
-                    <h2 className="text-sm font-light">
-                        by Justina Smith
-                    </h2>
+  const closeMobileMenu = () => {
+    setMobileMenuOpen(false);
+    setProjectsOpen(false);
+  };
+
+  return (
+    <nav
+      className={`sticky top-0 z-50 shadow-sm ${styles.navbar}`}
+    >
+      <div className="flex w-full items-start justify-between px-6 py-4 md:px-8">
+        {/* Logo */}
+        <Link
+          href="/"
+          onClick={closeMobileMenu}
+          className="flex flex-col items-start text-black leading-none"
+        >
+          <span
+            className={`${satisfy.className} text-[42px] font-normal leading-[0.8] md:text-[48px]`}
+          >
+            Tinnika
+          </span>
+
+          <span
+            className={`${satisfy.className} mt-2 text-[17px] italic leading-none text-neutral-700`}
+          >
+            by Justina Smith
+          </span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <div className="hidden items-center gap-8 pt-3 md:flex">
+          <Link
+            href="/"
+            className="text-sm text-black transition-opacity hover:opacity-50"
+          >
+            Home
+          </Link>
+
+          <Link
+            href="/about"
+            className="text-sm text-black transition-opacity hover:opacity-50"
+          >
+            About
+          </Link>
+
+          {/* Desktop Projects Dropdown */}
+          <div className="relative">
+            <button
+              type="button"
+              onClick={() => setProjectsOpen(!projectsOpen)}
+              className="flex items-center gap-1 text-sm text-black transition-opacity hover:opacity-50"
+            >
+              Projects
+              <span className="text-xs">
+                {projectsOpen ? "−" : "+"}
+              </span>
+            </button>
+
+            {projectsOpen && (
+              <div className="absolute right-0 top-full mt-4 min-w-[190px] border border-neutral-200 bg-[#f7f3ed] py-2 shadow-sm">
+                <Link
+                  href="/projects"
+                  onClick={() => setProjectsOpen(false)}
+                  className="block px-5 py-3 text-sm text-black hover:bg-black/5"
+                >
+                  All Projects
                 </Link>
 
-                <div className="space-x-4">
-                    <Link href="/" className="text-black hover:text-white">
-                        Home
-                    </Link>
+                <Link
+                  href="/projects/textiles"
+                  onClick={() => setProjectsOpen(false)}
+                  className="block px-5 py-3 text-sm text-black hover:bg-black/5"
+                >
+                  Textiles Collection
+                </Link>
 
+                <Link
+                  href="/projects/handbags"
+                  onClick={() => setProjectsOpen(false)}
+                  className="block px-5 py-3 text-sm text-black hover:bg-black/5"
+                >
+                  Handbag Collection
+                </Link>
+              </div>
+            )}
+          </div>
 
-                    <Link href="/about" className="text-black hover:text-white">
-                        About
-                    </Link>
+          <Link
+            href="/contact"
+            className="text-sm text-black transition-opacity hover:opacity-50"
+          >
+            Contact
+          </Link>
+        </div>
 
-                    
+        {/* Mobile Menu Button */}
+        <button
+          type="button"
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          className="flex h-10 w-10 flex-col items-center justify-center gap-[5px] md:hidden"
+          aria-label="Toggle navigation menu"
+          aria-expanded={mobileMenuOpen}
+        >
+          <span
+            className={`h-px w-6 bg-black transition-transform ${
+              mobileMenuOpen ? "translate-y-[6px] rotate-45" : ""
+            }`}
+          />
 
-                    {/*Dropdown Menu */}
-                    <div className="relative inline-block">
-                        <div>
-                    <button
-                        onClick={() => setIsOpen(!isOpen)}
-                        className="text-black hover:text-white focus:outline-none"
-                    >
-                         <Link href="/projects" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Projects
-                    </Link>
-                    </button>
-                    {isOpen && (
-                        <div className="absolute left-0 mt-2 w-40 bg-white rounded shadow-lg z-10">
-                           <Link href="/projects/textiles" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Textiles Collection
-                            </Link>
+          <span
+            className={`h-px w-6 bg-black transition-opacity ${
+              mobileMenuOpen ? "opacity-0" : ""
+            }`}
+          />
 
-                            
+          <span
+            className={`h-px w-6 bg-black transition-transform ${
+              mobileMenuOpen ? "-translate-y-[6px] -rotate-45" : ""
+            }`}
+          />
+        </button>
+      </div>
 
-                            <Link href="/projects/handbags" className="block px-4 py-2 text-black hover:bg-gray-200">
-                                Handbag  Collection
-                            </Link>
+      {/* Mobile Navigation */}
+      {mobileMenuOpen && (
+        <div className="border-t border-neutral-200 px-6 pb-8 pt-4 md:hidden">
+          <div className="flex flex-col">
+            <Link
+              href="/"
+              onClick={closeMobileMenu}
+              className="border-b border-neutral-200 py-4 text-black"
+            >
+              Home
+            </Link>
 
-                        </div>
-                    )}
-                        </div> {/* Close dropdown wrapper */}
-                    </div> {/* Close relative inline-block */}
-                    <Link href="/contact" className="text-black hover:text-white">
-                        Contact
-                    </Link>
-                </div>
-            </div>
-        </nav>
-    );
+            <Link
+              href="/about"
+              onClick={closeMobileMenu}
+              className="border-b border-neutral-200 py-4 text-black"
+            >
+              About
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => setProjectsOpen(!projectsOpen)}
+              className="flex w-full items-center justify-between border-b border-neutral-200 py-4 text-left text-black"
+            >
+              Projects
+              <span>{projectsOpen ? "−" : "+"}</span>
+            </button>
+
+            {projectsOpen && (
+              <div className="border-b border-neutral-200 py-2 pl-4">
+                <Link
+                  href="/projects"
+                  onClick={closeMobileMenu}
+                  className="block py-3 text-sm text-neutral-700"
+                >
+                  All Projects
+                </Link>
+
+                <Link
+                  href="/projects/textiles"
+                  onClick={closeMobileMenu}
+                  className="block py-3 text-sm text-neutral-700"
+                >
+                  Textiles Collection
+                </Link>
+
+                <Link
+                  href="/projects/handbags"
+                  onClick={closeMobileMenu}
+                  className="block py-3 text-sm text-neutral-700"
+                >
+                  Handbag Collection
+                </Link>
+              </div>
+            )}
+
+            <Link
+              href="/contact"
+              onClick={closeMobileMenu}
+              className="py-4 text-black"
+            >
+              Contact
+            </Link>
+          </div>
+        </div>
+      )}
+    </nav>
+  );
 };

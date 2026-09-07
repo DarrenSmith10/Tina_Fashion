@@ -32,16 +32,15 @@ export default function ProjectsPage() {
             </p>
 
             <h1 className="text-5xl leading-tight md:text-6xl lg:text-7xl">
-              Selected textile,
+              Selected textiles
               <br />
-              fashion and surface work.
+              and surface work.
             </h1>
           </div>
 
           <div className="lg:col-span-4 lg:col-start-9 lg:self-end">
             <p className="text-lg leading-8 text-neutral-600">
-              A collection of textile development, handcrafted accessories,
-              garment work and pattern exploration.
+              A collection of textile development, handcrafted accessories and pattern exploration.
             </p>
           </div>
         </section>
