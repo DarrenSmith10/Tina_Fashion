@@ -2,7 +2,7 @@ import ImageGrid from "@/components/ImageGrid";
 
 
 const handbagImages: string[] = [];
-for (let i = 1; i <= 13; i++) {
+for (let i = 1; i <= 19; i++) {
   handbagImages.push(`/assets/Images/HandBag_${i}.jpg`);
 }
 
