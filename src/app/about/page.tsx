@@ -68,11 +68,11 @@ export default function AboutPage() {
 
               <p className="text-xl leading-9 text-neutral-700">
                 Colour is the driving force behind each one of my designs. 
-                I enjoy exploring and experimenting with colour, and I love the results I achieve. 
+                I enjoy exploring and experimenting with colour, and I love the results I achieved. 
                 I love the freedom and surprise of mixing colours and creating different shades 
                 and the uniqueness this can give. 
                 My influences have been many from Matisse to Howard Hodgkin and the other bold 
-                colourists of the mid-21st century. I am also captivated by natural world and the colours 
+                colourists of the mid-21<sup>st</sup> century. I am also captivated by the natural world and the colours 
                 and textures of my surroundings. 
                 I use photography to capture this and then extract the shape, 
                 form, colour from these by creating patterns to 
