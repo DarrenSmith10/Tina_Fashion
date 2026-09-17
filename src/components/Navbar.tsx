@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Satisfy } from "next/font/google";
 import styles from "./Navbar.module.css";
 
+
 const satisfy = Satisfy({
   weight: "400",
   subsets: ["latin"],
