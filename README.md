@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Context
 
-First, run the development server:
+I built a modern, responsive portfolio website using Next.js for a client working in textile design and craft. The goal of the site is to establish a strong online presence that increases her visibility while highlighting her creativity and professional credibility within the industry.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The website showcases a curated range of her work, including textile art and handbags, presented through a clean, elegant, and user-focused design. Emphasis was placed on visual storytelling and accessibility across all devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project was also a key learning experience, allowing me to deepen my understanding of React, Tailwind CSS, responsive design principles, and deployment workflows, while building a real-world, client-focused application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Actions  {#overview-actions}
+- 🔹 **Step 1:** Built an interactive website from scratch using Next.js.
+- 🔹 **Step 2:** Structured and styled Next.js components using server-side rendering, Tailwind CSS & Vercel.
+- 🔹 **Step 3:** Deployed the application by pushing the codebase to a GitHub repository and connecting it to Vercel for continuous deployment.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+### Result
 
-To learn more about Next.js, take a look at the following resources:
+Below is the result.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Live demo](https://www.tinnikadesign.co.uk/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[GitHub Repository](https://github.com/DarrenSmith10/Tina_Fashion)
 
-## Deploy on Vercel
+- 📝 **Summary of Key Findings:**  
+  - Learned the structure of Next.js, using props to build components and TypeScript to design page layouts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  - Used Next.js to make pages more responsive and user-friendly with React state.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+  - Deployed the React/Next.js application to Vercel.
+
+  - Bought a domain name and linked it to the Vercel deployment so the site could be accessed on the web.
+
+
+### Future Considerations  {#overview-future}
+- 💡 Potential improvements:
+  1. Potentially add a database for user login.
+
+  2. Add a shopping catalogue with items and payment options if the client requests it.
+
+  
+
+---
