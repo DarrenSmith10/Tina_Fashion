@@ -1,4 +1,6 @@
-import { FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope } from 'react-icons/fa';
+
+
 
 export default function Footer() {
   return (
@@ -7,15 +9,7 @@ export default function Footer() {
       <div className="mb-6 flex items-center justify-center gap-3 text-gray-600">
         <p>Connect with me on the platforms:</p>
 
-        <a
-          href="https://linkedin.com/in/yourprofile"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
-          className="text-xl transition-opacity hover:opacity-50"
-        >
-          <FaLinkedin />
-        </a>
+        
 
         <a
           href="mailto:justinasmith@tinnikadesign.co.uk"
